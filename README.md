@@ -27,8 +27,8 @@ Run the `install/setup.sh` script to setup the environment:
 
 - Create the required namespaces
 - Deploy the Gateways (Gloo Egde API and K8S Gateway API)
-- Deploy the HTTPBin application
-- Deploy the Reference Grants
+- Deploy the World Cities Soap Service application
+- Deploy the RouteOptions
 - Deploy the VirtualService (Gloo Edge API)
 - Deploy the HTTPRoute (K8S Gateway API)
 
@@ -36,28 +36,16 @@ Run the `install/setup.sh` script to setup the environment:
 ./setup.sh
 ```
 
-## Access the HTTPBin application
+## Access the World Cities Soap Service application
 
 __Gloo Edg API:__
 
 ```
-./curl-request-ge-api.sh
-```
-
-or
-
-```
-curl -v http://api.example.com:81/get
+./curl-request-ge-api-json.sh
 ```
 
 __K8S Gateway API:__
 
 ```
-./curl-request-g8s-gw-api.sh
-```
-
-or
-
-```
-curl -v http://api.example.com:81/get
+./curl-request-g8s-gw-api-json.sh
 ```
